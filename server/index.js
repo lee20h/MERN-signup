@@ -36,10 +36,6 @@ app.get('/', (req,res) => {
     res.send('Main')
 });
 
-app.get('/api/hello', (req,res) => {
-    res.send("hi");
-})
-
 app.post('/register', (req, res) => {
     const user = new User(req.body);
     user.save((err, userInfo) => {
