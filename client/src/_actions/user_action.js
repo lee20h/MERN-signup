@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { LOGIN_USER, REGISTER_USER } from './types';
 export function loginUser(dataTosubmit) {
-    const request = axios.post('http://localhost:5000/api/users/login', dataTosubmit)
+    const request = axios.post('http://localhost:5000/login', dataTosubmit, { withCredentials: true })
     .then(res => res.data)
 
     return {
@@ -11,7 +11,7 @@ export function loginUser(dataTosubmit) {
 }
 
 export function registerUser(dataTosubmit) {
-    const request = axios.post('http://localhost:5000/api/users/register', dataTosubmit)
+    const request = axios.post('http://localhost:5000/register', dataTosubmit)
     .then(res => res.data)
 
     return {
