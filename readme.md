@@ -12,6 +12,7 @@ MERN(MongoDB, Express, React, Node) 스택을 사용한 웹 사이트에서의 �
 ## 🏃 스택
 - React & Redux
 - Node & Express
+- MongoDB
 
 ## 📃 참고자료
 - [John Ahn님의 github, 강의](https://github.com/jaewonhimnae)
